@@ -1,0 +1,101 @@
+@import "fuentes";
+@import "fondos";
+@import "navbar";
+@import "imagenes";
+@import "features";
+@import "footer";
+
+
+/*config. main-general*/
+.row {
+    margin: 0px;
+}
+
+.rowmargin {
+    margin-top: 3rem;
+}
+
+.softborder {
+    border: solid 0.1rem black;
+}
+
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin boxmodeling($margin, $padding, $position) {
+    margin: $margin;
+    padding: $padding;
+    position: $position;
+}
+
+.boxtitle {
+    @include sizes(5rem, 100%);
+    @include boxmodeling(5rem 1rem 2.5rem 1rem, 1rem 0rem, relative);
+    display: inline-block;
+}
+
+.boxsubtitle {
+    @include sizes(11rem, 100%);
+    @include boxmodeling(0rem 1rem 1rem 1rem, 1rem 0rem, relative);
+    display: inline-block;
+    color: black;
+}
+
+.boxheader {
+    @include sizes(3rem, auto);
+    @include boxmodeling(2rem, 0rem, relative);
+}
+
+.box1 {
+    @include sizes(40rem, auto);
+    @include boxmodeling(4rem 1rem, 0rem, relative);
+    display: inline-block;
+}
+
+.box2 {
+    @include sizes(65rem, auto);
+    @include boxmodeling(4rem 1rem, 0rem, relative);
+    display: inline-block;
+}
+
+.box3 {
+    @include sizes(42rem, auto);
+    @include boxmodeling(4rem 0rem, 0rem, relative);
+    display: inline-block;
+}
+
+.box4 {
+    @include sizes(15rem, 90rem);
+    @include boxmodeling(2.5rem 1rem, 0rem, relative);
+    display: inline-block;
+}
+
+.boxcontent1 {
+    @include sizes(29rem, auto);
+    @include boxmodeling(2rem, 1rem, relative);
+}
+
+.boxcontent2 {
+    @include sizes(13rem, auto);
+    @include boxmodeling(2rem, 1rem, relative);
+}
+
+.boxcontent3 {
+    @include sizes(20rem, auto);
+    @include boxmodeling(2rem, 1rem, relative);
+}
+
+.boxcontent4 {
+    @include sizes(18rem, auto);
+    @include boxmodeling(2rem, 1rem, relative);
+}
+
+.boxicons {
+    @include sizes(5rem, auto);
+    @include boxmodeling(0rem 3rem, 1rem, relative);
+    overflow: hidden;
+    display: inline-block;
+    justify-content: space-between;
+}
