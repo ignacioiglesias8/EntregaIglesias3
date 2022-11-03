@@ -21,16 +21,23 @@ html {
     text-shadow: 0 0 5px black;
     h1 {
         font-size: 10rem;
+        font-family: 'quicksand';
+    }
+    h2 {
+        font-size: 8rem;
+        text-align: center;
+    }
+    .sub{
+        text-align: center;
     }
 }
 
-.font-content {
-    @include formato-fuente(2rem, black, center, Times); 
+h3 {
+    @include formato-fuente(3rem, black, center, 'quicksand'); 
 }
 
-.font-title {
-    @include formato-fuente(2.5rem, black, center, Times); 
-    font-weight: bold;
+.font-content {
+    @include formato-fuente(1.8rem, black, center, Times); 
 }
 
 .font-otrainfo {

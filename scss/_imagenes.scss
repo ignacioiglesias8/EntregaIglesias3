@@ -1,9 +1,14 @@
 /*index*/
-.jumbotron {
+.jumbotron1 {
     background-image: url(../media/images/principal.jpg);
     background-size: cover;
     background-position: center;
     height: 54.5rem;
+}
+
+.jumbotron2 {
+    @extend .jumbotron1;
+    height: 20rem;
 }
 
 @mixin formato-foto($background-size, $background-position, $height, $margin) {
