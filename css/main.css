@@ -264,6 +264,11 @@ footer {
 .softborder {
   border: solid 0.1rem black; }
 
+.text_align {
+  display: flex;
+  align-content: center;
+  align-items: center; }
+
 .boxheader {
   height: 2.5rem;
   width: auto;
@@ -389,8 +394,12 @@ footer {
 @media screen and (max-width: 778px) {
   h3 {
     font-size: 2.8rem; }
-  .font-content {
+  .font-content font-query {
     font-size: 1.5rem; } }
+
+@media screen and (max-width: 487px) {
+  .box4 {
+    height: 25rem; } }
 
 @media screen and (max-width: 449px) {
   .formulario textarea {
@@ -432,13 +441,11 @@ footer {
   .boxicons {
     width: 29rem;
     margin: 0rem 0.5rem; }
-  .box4 {
-    height: 20rem; }
   .font-jumbotron {
     font-size: 1.8rem; }
   h3 {
     font-size: 2.3rem; }
-  .font-content {
+  .font-content .font_query {
     font-size: 1.5rem; } }
 
 @media screen and (max-width: 379px) {

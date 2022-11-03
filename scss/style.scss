@@ -18,6 +18,12 @@
     border: solid 0.1rem black;
 }
 
+.text_align {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
 @mixin sizes($height, $width) {
     height: $height;
     width: $width;
