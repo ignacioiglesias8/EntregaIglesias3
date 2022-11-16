@@ -453,3 +453,7 @@ footer {
     width: 95%; }
   .inputform {
     width: 95%; } }
+
+@media screen and (max-width: 337px) {
+  .boxcontent4 p {
+    font-size: 1.5rem; } }
